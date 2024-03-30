@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "1.0.0",
   "description": "Derek's online portfolio, built with React.",
-  "main": "index.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dymoy/react-portfolio.git"
@@ -22,8 +22,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
