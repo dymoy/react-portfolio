@@ -13,7 +13,7 @@
 
 body {
     height: 100vh;
-    background-image: linear-gradient(to right, var(--cream), var(--cream) 58%, var(--green) 100%, var(--green));
+    background-image: linear-gradient(to right, var(--cream), var(--cream) 55%, var(--green) 100%, var(--green));
 }
 
 /* HEADER */
@@ -27,28 +27,11 @@ header {
     top: 0;
     left: 0;
     padding: 20px;
-    background-image: linear-gradient(to right, var(--cream), var(--cream) 58%, var(--green) 100%, var(--green));
+    background-image: linear-gradient(to right, var(--cream), var(--cream) 55%, var(--green) 100%, var(--green));
 }
 
 .logo {
-    height: 70px;
-}
-
-/* LINKS */
-
-li {
-    text-decoration: none;
-}
-
-a {
-    color: var(--cream);
-    text-decoration: none;
-    transition: .5s ease;
-    font-size: 20px 15px;
-}
-
-a:hover {
-    color: var(--lilac);
+    height: 85px;
 }
 
 /* SECTION */
@@ -59,7 +42,10 @@ a:hover {
 }
 
 .section-title {
-    color: var(--cool-gray);
+    font-size: 40px;
+    font-family: "Work Sans", serif;
+    font-weight: 700;
+    color: var(--lilac);
 }
 
 /* ABOUT */
@@ -118,10 +104,10 @@ a:hover {
 .form-submit-btn {
     width: 100%;
     color: var(--cream);
-    background-color: var(--cool-gray);
+    background-color: var(--green2);
     transition: .5s ease;
 }
 
 .form-submit-btn:hover {
-    background: var(--green2);
+    background: var(--green);
 }

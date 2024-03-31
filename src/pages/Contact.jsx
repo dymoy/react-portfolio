@@ -75,7 +75,7 @@ export default function Contact() {
     return (
         <section id="contact" className='section d-flex flex-column justify-content-center align-items-start'>
             <div>
-                <h4 className='section-title'>Want to send me a message?</h4>
+                <h3 className='section-title'>Want to send me a message?</h3>
                 <p>Fill out the fields below and submit the form to get in contact with me! </p>
             </div>
             <form className='form' onSubmit={handleFormSubmit}>
