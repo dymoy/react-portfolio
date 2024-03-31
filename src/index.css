@@ -27,7 +27,6 @@ header {
     top: 0;
     left: 0;
     padding: 20px;
-    background-image: linear-gradient(to right, var(--cream), var(--cream) 55%, var(--green) 100%, var(--green));
     z-index: 99;
 }
 
@@ -38,25 +37,38 @@ header {
 /* SECTION */
 .section {
     width: 80%;
-    margin: 70px auto;
+    margin: 50px auto;
 }
 
 /* ABOUT */
-#full-name, 
-.section-title {
-    font-size: 40px;
+#full-name {
     font-family: "Work Sans", serif;
     font-weight: 700;
     color: var(--lilac);
-    width: 0;
+} 
+
+#role {
+    font-family: "Work Sans", serif;
+    font-weight: 700;
+    color: var(--cool-gray);
+}
+
+.section-title {
+    font-family: "Work Sans", serif;
+    font-weight: 700;
+    color: var(--cool-gray);
+}
+
+.type-animate {
+    width: auto;
     overflow: hidden;
-    border-right: .15em solid var(--lilac);
+    border-right: .10em solid transparent;
     white-space: nowrap;
     
     animation: 
-        typing 1.2s steps(20, end) forwards,
-        blink-caret .5s step-end infinite,
-        end 3s 3s step-start;
+        typing 1.8s steps(50, end) forwards,
+        blink-caret .5s step-start 1.5,
+        ending 3s 3s step-start;
 }
 
 /* The typing effect */
@@ -71,15 +83,10 @@ header {
     50% { border-color: var(--lilac) }
 }
 
-@keyframes end {
-    to {
+@keyframes ending {
+    from, to {
       border-right: 0 solid transparent;
     }
-}
-
-#role {
-    font-weight: 700;
-    color: var(--lilac);
 }
 
 #pic {

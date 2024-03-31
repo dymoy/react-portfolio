@@ -64,7 +64,7 @@ export default function Portfolio() {
     return (
         <section id="portfolio" className='section d-flex flex-row flex-wrap justify-content-start align-items-start'>
             <div>
-                <h3 className='section-title'>Check out these projects! </h3>
+                <h2 className='section-title type-animate'>Check out these projects! </h2>
                 <p>Hover over each card to reveal links to the deployed application and the GitHub repository.</p>
             </div>
             <div className="projects">
