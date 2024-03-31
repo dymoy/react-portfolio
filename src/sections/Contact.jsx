@@ -40,9 +40,6 @@ export default function Contact() {
         const inputType = target.name;
         const inputValue = target.value;
 
-        console.log(`inputType: ${inputType}`);
-        console.log(`inputValue: ${inputValue}`);
-
         // Check if the inputValue is valid 
         if(!inputValue) {
             // Notify the user that the field is required
@@ -56,6 +53,18 @@ export default function Contact() {
         // Prevent the default behavior of the form submit, which is to refresh the page
         e.preventDefault();
 
+        const formData = new FormData(e.target);
+
+        fetch("https://getform.io/f/pbgxppxa", {
+            method: "POST",
+            body: formData,
+            headers: {
+                "Accept": "application/json",
+            },
+        })
+        .then(response => console.log(response))
+        .catch(error => console.log(error))
+
         // Reset states 
         setName('');
         setEmail('');
@@ -65,7 +74,7 @@ export default function Contact() {
 
     return (
         <section id="contact" className='section d-flex flex-column justify-content-center align-items-start'>
-            <div className="">
+            <div>
                 <h4 className='section-title'>Want to send me a message?</h4>
                 <p>Fill out the fields below and submit the form to get in contact with me! </p>
             </div>
