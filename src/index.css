@@ -1,5 +1,105 @@
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
+    height: 100vh;
+    --green: #294936;
+    --green2: #3B684D;
+    --cream: #F0E7D8;
+    --cool-gray:#817E9F;
+    --lilac: #BD93BD;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, var(--cream), var(--cream) 58%, var(--green) 100%, var(--green));
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.logo {
+    height: 70px;
+}
+
+/* LINKS */
+
+li {
+    text-decoration: none;
+}
+
+a {
+    color: var(--cream);
+    text-decoration: none;
+    transition: .5s ease;
+    font-size: 20px 15px;
+}
+
+a:hover {
+    color: var(--green);
+}
+
+/* SECTION */
+.section {
+    height: 80vh;
+    margin: 95px 80px;
+}
+
+/* ABOUT */
+#full-name {
+    width: auto;
+    font-size: 40px;
+    font-family: "Work Sans", serif;
+    font-weight: 700;
+    color: var(--cool-gray);
+    width: 0;
+    overflow: hidden;
+    border-right: .15em solid var(--stone);
+    white-space: nowrap;
+    
+    animation: 
+        typing 1.2s steps(20, end) forwards,
+        blink-caret .5s step-end infinite,
+        end 3s 3s step-start;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 28% }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--stone) }
+}
+
+@keyframes end {
+    to {
+      border-right: 0 solid transparent;
+    }
+}
+
+#role {
+    font-weight: 700;
+    color: var(--lilac);
+}
+
+#pic {
+    width: 300px;
+    height: 300px;
+    border: 5px solid var(--cream);
+    border-radius: 50%;
 }

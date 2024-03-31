@@ -1,15 +1,15 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Navigation from './Navigation';
+import '../index.css';
+import Logo from '../assets/icons/logo.svg';
 
 export default function Header() {
     return (
         <header> 
             {/* Present name */}
-            <div className="name">
-                <h1>Derek Y. Moy</h1>
-            </div>
+            <img src={Logo} alt="logo" className='logo'/>
             {/* Present navbar with titles corresponding to different sections of the portfolio */}
-            <Navbar />
+            <Navigation />
         </header>
     );
 }
