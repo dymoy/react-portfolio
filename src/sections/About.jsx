@@ -2,7 +2,7 @@ import ProfilePic from '../assets/imgs/profile_pic.jpg';
 
 export default function About() {
     return (
-        <section id="about" className='section d-flex justify-content-around align-items-center'>
+        <section id="about" className='section d-flex justify-content-between align-items-center'>
             <div id="about-content-container" className="col-md-7 text-dark">
                 <h6>Hello, world! My name is</h6>
                 <h4 id="full-name">Derek Moy</h4>
