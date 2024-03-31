@@ -21,12 +21,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     width: 100%;
     margin: 0 auto;
     top: 0;
     left: 0;
     padding: 20px;
+    background-image: linear-gradient(to right, var(--cream), var(--cream) 58%, var(--green) 100%, var(--green));
 }
 
 .logo {
@@ -47,13 +48,18 @@ a {
 }
 
 a:hover {
-    color: var(--green);
+    color: var(--lilac);
 }
 
 /* SECTION */
 .section {
     height: 80vh;
-    margin: 95px 80px;
+    width: 80%;
+    margin:auto;
+}
+
+.section-title {
+    color: var(--cool-gray);
 }
 
 /* ABOUT */
@@ -62,10 +68,10 @@ a:hover {
     font-size: 40px;
     font-family: "Work Sans", serif;
     font-weight: 700;
-    color: var(--cool-gray);
+    color: var(--lilac);
     width: 0;
     overflow: hidden;
-    border-right: .15em solid var(--stone);
+    border-right: .15em solid var(--lilac);
     white-space: nowrap;
     
     animation: 
@@ -77,13 +83,13 @@ a:hover {
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 28% }
+    to { width: 50% }
 }
   
 /* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: var(--stone) }
+    50% { border-color: var(--lilac) }
 }
 
 @keyframes end {
@@ -98,8 +104,24 @@ a:hover {
 }
 
 #pic {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border: 5px solid var(--cream);
     border-radius: 50%;
+}
+
+/* CONTACT */
+.error-text { 
+    color: red;
+}
+
+.form-submit-btn {
+    width: 100%;
+    color: var(--cream);
+    background-color: var(--cool-gray);
+    transition: .5s ease;
+}
+
+.form-submit-btn:hover {
+    background: var(--green2);
 }
