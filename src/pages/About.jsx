@@ -5,7 +5,7 @@ export default function About() {
         <section id="about" className='section d-flex justify-content-between align-items-center'>
             <div id="about-content-container" className="col-md-7 text-dark">
                 <h6>Hello, world! My name is</h6>
-                <h4 id="full-name">Derek Moy</h4>
+                <h3 id="full-name">Derek Moy</h3>
                 <h5> I am a <span id='role'>Full Stack Web Developer</span>.</h5>
                 <br/>
                 <p>Welcome to my online portfolio! If you've found your way here, you are probably looking to learn more about me and my work.</p>
@@ -15,7 +15,6 @@ export default function About() {
             <div id="about-pic-container" className='col-md-3 d-flex justify-content-center'>
                 <img id="pic" src={ProfilePic} alt="Profile Picture" />
             </div>
-
         </section>
     );
 }
