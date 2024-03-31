@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 export default function Navigation() {
@@ -10,9 +9,7 @@ export default function Navigation() {
     ];
 
     const greenHex = "#3B684D";
-    const grayHex = "#817E9F";
     const creamHex = "#F0E7D8";
-
 
     return (
         <nav className="navbar navbar-expand-lg">
@@ -27,9 +24,8 @@ export default function Navigation() {
                                     color: isActive ? creamHex : greenHex,
                                     backgroundColor: isActive ? greenHex : creamHex
                                 }
-                                
                             }}
-                            className='nav-link mx-1 rounded'>
+                            className='nav-link mx-1 my-1 p-2 text-center rounded'>
                             {item.name}
                         </NavLink>
                     ))}

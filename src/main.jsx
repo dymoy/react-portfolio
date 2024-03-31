@@ -1,11 +1,12 @@
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import './index.css'
+import './index.css';
 
 import App from './App';
-import About from './pages/About.jsx'
-import Contact from './pages/Contact.jsx'
+import About from './pages/About.jsx';
+import Portfolio from './pages/Portfolio.jsx';
+import Contact from './pages/Contact.jsx';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <About />,
+      },
+      {
+        path: 'portfolio',
+        element: <Portfolio />
       },
       {
         path: 'contact-me',
