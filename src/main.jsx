@@ -4,7 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css'
 
 import App from './App';
-import About from './sections/About.jsx'
+import About from './pages/About.jsx'
+import Contact from './pages/Contact.jsx'
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
         index: true,
         element: <About />,
       },
+      {
+        path: 'contact-me',
+        element: <Contact />
+      }
     ],
   },
 ]);

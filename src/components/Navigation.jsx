@@ -1,22 +1,38 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Navigation() {
+    const navbar = [
+        {name: "ABOUT ME", href: "/", current: true},
+        {name: "PORTFOLIO", href: "/portfolio", current: true},
+        {name: "RESUME", href: "/resume", current: true},
+        {name: "CONTACT ME", href: "/contact-me", current: true},
+    ];
+
+    const greenHex = "#3B684D";
+    const grayHex = "#817E9F";
+    const creamHex = "#F0E7D8";
+
+
     return (
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li>
-                        <Link key={1} className="nav-link text-light" to="about">ABOUT ME</Link>
-                    </li>
-                    <li>
-                        <Link key={2} className="nav-link text-light" to="#portfolio">PORTFOLIO</Link>
-                    </li>
-                    <li>
-                        <Link key={3} className="nav-link text-light" to="#resume">RESUME</Link>
-                    </li>
-                    <li>
-                        <Link key={4} className="nav-link text-light" to="#contact">CONTACT ME</Link>
-                    </li>
+                    {navbar.map((item) => (
+                        <NavLink
+                            key={item.name}
+                            to={item.href}
+                            style={({isActive}) => {
+                                return {
+                                    color: isActive ? creamHex : greenHex,
+                                    backgroundColor: isActive ? greenHex : creamHex
+                                }
+                                
+                            }}
+                            className='nav-link mx-1 rounded'>
+                            {item.name}
+                        </NavLink>
+                    ))}
                 </ul>
             </div>
         </nav>
