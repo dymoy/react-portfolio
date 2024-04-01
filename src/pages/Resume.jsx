@@ -6,7 +6,7 @@ export default function Resume() {
                 <p>Click the button below to download my resumé and learn more about my involvements!</p>
                 <a id="resume-link" type="button" href="" download="MoyDerek_Resume">Download</a>
             </div>
-            <div className="skills-div col-md-8 mt-5">
+            <div className="skills-div col-md-8 my-5">
                 <h2 className='section-title type-animate'>Level up! New skill acquired!</h2>
                 <p>Here is a list of technologies that I have worked with so far.</p>
                 <div id="badge-container">
@@ -48,7 +48,6 @@ export default function Resume() {
                     <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge" className="badge-img" />
                     <img src="https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab Badge" className="badge-img" />
                     <br/><br/>
-
                 </div>
             </div>
         </section>

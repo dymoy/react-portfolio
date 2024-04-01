@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 
 export default function Project({name, desc, bg_img, repo, url}) {
     return (
-        <div className='project-card col-md-7 col-xs-12 my-4'>
+        <div className='project-card col-lg-7 col-sm-12 my-4'>
             <Card>
                 <Card.Img variant="top" src={bg_img} />
                 <Card.ImgOverlay>
