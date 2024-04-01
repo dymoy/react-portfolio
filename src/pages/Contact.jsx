@@ -75,18 +75,18 @@ export default function Contact() {
     return (
         <section id="contact" className='section d-flex flex-column justify-content-center align-items-start'>
             <div>
-                <h3 className='section-title'>Want to send me a message?</h3>
+                <h2 className='section-title type-animate'>Want to send me a message?</h2>
                 <p>Fill out the fields below and submit the form to get in contact with me! </p>
             </div>
             <form className='form' onSubmit={handleFormSubmit}>
                 <div className='form-field my-2'>
-                    <input required value={name} name="name" onChange={handleInputChange} onBlur={validateFilled} type="text" size="50" placeholder="What's your name?"/>
+                    <input required value={name} name="name" onChange={handleInputChange} onBlur={validateFilled} type="text" size="75" placeholder="What's your name?"/>
                 </div>
                 <div className='form-field my-2'>
-                    <input required value={email} name="email" onChange={handleInputChange} onBlur={validateFilled} type="email" size="50" placeholder="What email address can I reach you at?" />
+                    <input required value={email} name="email" onChange={handleInputChange} onBlur={validateFilled} type="email" size="75" placeholder="What email address can I reach you at?" />
                 </div>
                 <div className='form-field my-2'>
-                    <textarea required value={message} name="message" onChange={handleInputChange} onBlur={validateFilled} cols="75" rows="10" placeholder='Write your message here!'></textarea>
+                    <textarea required value={message} name="message" onChange={handleInputChange} onBlur={validateFilled} cols="74" rows="10" placeholder='Write your message here!'></textarea>
                 </div>
                 {error && (
                     <div>

@@ -4,7 +4,7 @@ export default function Navigation() {
     const navbar = [
         {name: "ABOUT ME", href: "/", current: true},
         {name: "PORTFOLIO", href: "/portfolio", current: true},
-        {name: "RESUME", href: "/resume", current: true},
+        {name: "RESUMÉ", href: "/resume", current: true},
         {name: "CONTACT ME", href: "/contact-me", current: true},
     ];
 

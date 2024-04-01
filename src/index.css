@@ -5,6 +5,7 @@
     --cream: #F0E7D8;
     --cool-gray:#817E9F;
     --lilac: #BD93BD;
+    --dark-lilac: #9D6381;
 }
 
 * {
@@ -27,7 +28,6 @@ header {
     top: 0;
     left: 0;
     padding: 20px;
-    background-image: linear-gradient(to right, var(--cream), var(--cream) 55%, var(--green) 100%, var(--green));
     z-index: 99;
 }
 
@@ -38,25 +38,38 @@ header {
 /* SECTION */
 .section {
     width: 80%;
-    margin: 70px auto;
+    margin: 50px auto;
 }
 
 /* ABOUT */
-#full-name, 
-.section-title {
-    font-size: 40px;
+#full-name {
     font-family: "Work Sans", serif;
     font-weight: 700;
-    color: var(--lilac);
-    width: 0;
+    color: #cc5490;
+} 
+
+#role {
+    font-family: "Work Sans", serif;
+    font-weight: 700;
+    color: var(--cool-gray);
+}
+
+.section-title {
+    font-family: "Work Sans", serif;
+    font-weight: 700;
+    color: var(--cool-gray);
+}
+
+.type-animate {
+    width: auto;
     overflow: hidden;
-    border-right: .15em solid var(--lilac);
+    border-right: .10em solid transparent;
     white-space: nowrap;
     
     animation: 
-        typing 1.2s steps(20, end) forwards,
-        blink-caret .5s step-end infinite,
-        end 3s 3s step-start;
+        typing 1.5s steps(50, end) forwards,
+        blink-caret .2s step-start 3,
+        ending 3s 3s step-start;
 }
 
 /* The typing effect */
@@ -71,15 +84,10 @@ header {
     50% { border-color: var(--lilac) }
 }
 
-@keyframes end {
-    to {
+@keyframes ending {
+    from, to {
       border-right: 0 solid transparent;
     }
-}
-
-#role {
-    font-weight: 700;
-    color: var(--lilac);
 }
 
 #pic {
@@ -127,6 +135,31 @@ header {
     transition: .6s ease;
 }
 
+/* RESUME */
+#resume-link {
+    text-decoration: none;
+    color: black;
+    background-color: var(--lilac);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    opacity: 0.7;
+    box-shadow: gray 3px 3px 3px;
+}
+
+#resume-link:hover {
+    opacity: 1;
+    color: var(--cream);
+    background-color: var(--green2);
+    transition: .4s ease;
+}
+
+.badge-img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
 /* CONTACT */
 .error-text { 
     color: red;
@@ -142,4 +175,3 @@ header {
 .form-submit-btn:hover {
     background: var(--green);
 }
-
