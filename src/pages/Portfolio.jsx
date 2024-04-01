@@ -67,7 +67,7 @@ export default function Portfolio() {
                 <h2 className='section-title type-animate'>Check out these projects! </h2>
                 <p>Hover over each card to reveal links to the deployed application and the GitHub repository.</p>
             </div>
-            <div className="projects">
+            <div className="projects mb-5">
                 {projects.map((project) => {
                     return <Project key={project.key} name={project.name} desc={project.desc} bg_img={project.bg_img} repo={project.repo} url={project.url} />
                 })}
