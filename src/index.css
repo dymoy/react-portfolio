@@ -5,6 +5,7 @@
     --cream: #F0E7D8;
     --cool-gray:#817E9F;
     --lilac: #BD93BD;
+    --dark-lilac: #9D6381;
 }
 
 * {
@@ -44,7 +45,7 @@ header {
 #full-name {
     font-family: "Work Sans", serif;
     font-weight: 700;
-    color: var(--lilac);
+    color: #cc5490;
 } 
 
 #role {
@@ -66,8 +67,8 @@ header {
     white-space: nowrap;
     
     animation: 
-        typing 1.8s steps(50, end) forwards,
-        blink-caret .5s step-start 1.5,
+        typing 1.5s steps(50, end) forwards,
+        blink-caret .2s step-start 3,
         ending 3s 3s step-start;
 }
 
@@ -134,6 +135,31 @@ header {
     transition: .6s ease;
 }
 
+/* RESUME */
+#resume-link {
+    text-decoration: none;
+    color: black;
+    background-color: var(--lilac);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    opacity: 0.7;
+    box-shadow: gray 3px 3px 3px;
+}
+
+#resume-link:hover {
+    opacity: 1;
+    color: var(--cream);
+    background-color: var(--green2);
+    transition: .4s ease;
+}
+
+.badge-img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
 /* CONTACT */
 .error-text { 
     color: red;
@@ -149,4 +175,3 @@ header {
 .form-submit-btn:hover {
     background: var(--green);
 }
-

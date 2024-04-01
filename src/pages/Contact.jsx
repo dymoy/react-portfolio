@@ -80,13 +80,13 @@ export default function Contact() {
             </div>
             <form className='form' onSubmit={handleFormSubmit}>
                 <div className='form-field my-2'>
-                    <input required value={name} name="name" onChange={handleInputChange} onBlur={validateFilled} type="text" size="50" placeholder="What's your name?"/>
+                    <input required value={name} name="name" onChange={handleInputChange} onBlur={validateFilled} type="text" size="75" placeholder="What's your name?"/>
                 </div>
                 <div className='form-field my-2'>
-                    <input required value={email} name="email" onChange={handleInputChange} onBlur={validateFilled} type="email" size="50" placeholder="What email address can I reach you at?" />
+                    <input required value={email} name="email" onChange={handleInputChange} onBlur={validateFilled} type="email" size="75" placeholder="What email address can I reach you at?" />
                 </div>
                 <div className='form-field my-2'>
-                    <textarea required value={message} name="message" onChange={handleInputChange} onBlur={validateFilled} cols="75" rows="10" placeholder='Write your message here!'></textarea>
+                    <textarea required value={message} name="message" onChange={handleInputChange} onBlur={validateFilled} cols="74" rows="10" placeholder='Write your message here!'></textarea>
                 </div>
                 {error && (
                     <div>
