@@ -14,10 +14,6 @@ export default function Header() {
             {/* Present name */}
             <div className='header-div'>
                 <img src={Logo} alt="logo" className='logo'/>
-                <h1 id="header-name" className={ 
-                    'm-0' + 
-                    (isHome() ? ' is-home' : '')
-                }>Derek Moy</h1>
             </div>
             {/* Present navbar with titles corresponding to different sections of the portfolio */}
             <div className='navigation my-auto'>

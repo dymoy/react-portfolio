@@ -29,16 +29,6 @@ header {
     background-image: linear-gradient(to right, var(--cream), var(--cream) 55%, var(--green) 100%, var(--green));
 }
 
-.is-home {
-    display: none;
-}
-
-#header-name {
-    font-family: "Work Sans", serif;
-    font-weight: 700;
-    color: var(--lilac);
-}
-
 .logo {
     height: 81px;
 }
@@ -228,7 +218,9 @@ footer svg {
     background: var(--green);
 }
 
-@media screen and (max-width: 800px) {
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 850px) {
     * {
         font-size: .96em;
     }
@@ -245,15 +237,28 @@ footer svg {
         width: 180px;
         height: 180px;
         border: 2px solid var(--cream);
+        margin: 0px 0px 30px
+    }
+
+    #contact {
+        margin-bottom: 80px;
     }
 
     footer {
         justify-content: center;
+        padding: 7px;
     }
 
     footer svg {
         height: 30px;
         margin: 3px 10px;
         fill: var(--cool-gray);
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    * {
+        font-size: .98em;
     }
 }
