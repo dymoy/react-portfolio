@@ -17,7 +17,6 @@ export default function Contact() {
             setName(inputValue);
         } else if (inputType == 'email') {
             const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-
             setEmail(inputValue);
 
             if (regex.test(inputValue)) {
@@ -34,6 +33,7 @@ export default function Contact() {
         }
     }
 
+    // Moving cursor out of form fields without entering text will prompt the user that the field is required
     const validateFilled = (e) => {
         const {target} = e;
         const inputType = target.name;
@@ -87,6 +87,7 @@ export default function Contact() {
                 <div className='form-field my-2'>
                     <textarea required value={message} name="message" onChange={handleInputChange} onBlur={validateFilled} cols="74" rows="10" placeholder='Write your message here!' className='form-control'></textarea>
                 </div>
+                {/* Present errors, if any */}
                 {error && (
                     <div>
                         <p className="error-text">* {error} *</p>

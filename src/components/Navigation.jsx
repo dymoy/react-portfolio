@@ -15,11 +15,13 @@ export default function Navigation() {
         <nav className="navbar navbar-expand">
             <div className="container-fluid">
                 <ul className="navbar-nav me-auto">
+                    {/* Map the navbar array to create a NavLink component for each item*/}
                     {navbar.map((item) => (
                         <li className='nav-item' key={item.name}>
                             <NavLink
                                 key={item.name}
                                 to={item.href}
+                                // Style the NavLink depending on the current/ active page
                                 style={({isActive}) => {
                                     return {
                                         color: isActive ? creamHex : greenHex,
