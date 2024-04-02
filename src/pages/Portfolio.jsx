@@ -68,6 +68,7 @@ export default function Portfolio() {
                 <p>Hover over each card to reveal links to the deployed application and the GitHub repository.</p>
             </div>
             <div className="projects mb-5">
+                {/* Map the projects array to create a Project component for each item */}
                 {projects.map((project) => {
                     return <Project key={project.key} name={project.name} desc={project.desc} bg_img={project.bg_img} repo={project.repo} url={project.url} />
                 })}

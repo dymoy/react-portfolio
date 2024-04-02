@@ -17,7 +17,6 @@ export default function Contact() {
             setName(inputValue);
         } else if (inputType == 'email') {
             const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-
             setEmail(inputValue);
 
             if (regex.test(inputValue)) {
@@ -34,6 +33,7 @@ export default function Contact() {
         }
     }
 
+    // Moving cursor out of form fields without entering text will prompt the user that the field is required
     const validateFilled = (e) => {
         const {target} = e;
         const inputType = target.name;
@@ -77,7 +77,7 @@ export default function Contact() {
                 <h2 className='section-title type-animate'>Want to send me a message?</h2>
                 <p>Fill out the fields below and submit the form to get in contact with me! </p>
             </div>
-            <form className='form' onSubmit={handleFormSubmit}>
+            <form className='form mb-5' onSubmit={handleFormSubmit}>
                 <div className='form-field my-2'>
                     <input required value={name} name="name" onChange={handleInputChange} onBlur={validateFilled} type="text" size="75" placeholder="What's your name?" className='form-control'/>
                 </div>
@@ -87,6 +87,7 @@ export default function Contact() {
                 <div className='form-field my-2'>
                     <textarea required value={message} name="message" onChange={handleInputChange} onBlur={validateFilled} cols="74" rows="10" placeholder='Write your message here!' className='form-control'></textarea>
                 </div>
+                {/* Present errors, if any */}
                 {error && (
                     <div>
                         <p className="error-text">* {error} *</p>
