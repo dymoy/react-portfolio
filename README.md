@@ -11,7 +11,6 @@ My webpage is split into 4 major sections: About Me, Porfolio, Resume, and Conta
 
 I've created this website using React and Vite, and hosted it on Netlify which you can access [here](https://dymoy.netlify.app/). Take a look around and send me a message if you're interested in connecting! 
 
-
 ## Table of Contents 
 - [Installation](#installation)
 - [Dependencies](#dependencies)
@@ -33,8 +32,8 @@ This project requires the following npm package dependencies, which are included
 1. [bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) 
 2. [react](https://legacy.reactjs.org/docs/getting-started.html)
 3. [react-bootstrap](https://react-bootstrap.netlify.app/)
-3. [react-dom](https://legacy.reactjs.org/docs/react-dom.html)
-4. [react-router-dom](https://reactrouter.com/en/main)
+4. [react-dom](https://legacy.reactjs.org/docs/react-dom.html)
+5. [react-router-dom](https://reactrouter.com/en/main)
 
 ## Usage 
 
