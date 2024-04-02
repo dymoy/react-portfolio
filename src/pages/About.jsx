@@ -14,7 +14,7 @@ export default function About() {
                 <p>So, take a look around! If you're interested in connecting to discuss my work, make your way to the "Contact Me" section to reach me. I look forward to hearing from you! </p>
             </div>
             {/* Recent photo of self */}
-            <div id="about-pic-container" className='col-md-3 d-flex justify-content-center mx-auto mt-0 mb-5'>
+            <div id="about-pic-container" className='col-md-3 d-flex justify-content-center mx-auto mt-0'>
                 <img id="pic" src={ProfilePic} alt="Profile Picture" />
             </div>
         </section>

@@ -77,7 +77,7 @@ export default function Contact() {
                 <h2 className='section-title type-animate'>Want to send me a message?</h2>
                 <p>Fill out the fields below and submit the form to get in contact with me! </p>
             </div>
-            <form className='form' onSubmit={handleFormSubmit}>
+            <form className='form mb-5' onSubmit={handleFormSubmit}>
                 <div className='form-field my-2'>
                     <input required value={name} name="name" onChange={handleInputChange} onBlur={validateFilled} type="text" size="75" placeholder="What's your name?" className='form-control'/>
                 </div>

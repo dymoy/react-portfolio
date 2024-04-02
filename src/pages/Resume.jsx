@@ -1,6 +1,6 @@
 export default function Resume() {
     return (
-        <section id="portfolio" className='section d-flex flex-row flex-wrap justify-content-start align-items-start'>
+        <section id="portfolio" className='section d-flex flex-row flex-wrap justify-content-start align-items-start mb-5'>
             <div className="resume-div col-md-8">
                 <h2 className='section-title type-animate'>Extra, Extra! Read all about it! </h2>
                 <p>Click the button below to download my resumé and learn more about my involvements!</p>
