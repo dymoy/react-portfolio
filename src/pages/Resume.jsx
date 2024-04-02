@@ -1,11 +1,15 @@
+import MoyDerek_Resume from '../assets/Resume_MoyDerek.pdf';
+
 export default function Resume() {
     return (
         <section id="portfolio" className='section d-flex flex-row flex-wrap justify-content-start align-items-start mb-5'>
+            {/* Give user the option to download resume */}
             <div className="resume-div col-md-8">
                 <h2 className='section-title type-animate'>Extra, Extra! Read all about it! </h2>
                 <p>Click the button below to download my resumé and learn more about my involvements!</p>
-                <a id="resume-link" type="button" href="" download="MoyDerek_Resume">Download</a>
+                <a id="resume-link" type="button" href={MoyDerek_Resume} download="MoyDerek_Resume">Download</a>
             </div>
+            {/* Display list of skill proficiencies */}
             <div className="skills-div col-md-8 my-5">
                 <h2 className='section-title type-animate'>Level up! New skill acquired!</h2>
                 <p>Here is a list of technologies that I have worked with so far.</p>
