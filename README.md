@@ -20,11 +20,11 @@ I've created this website using React and Vite, and hosted it on Netlify which y
 ## Installation 
 There is no installation necessary for this application as it is deployed and hosted on [Netlify](https://docs.netlify.com/). You can access my website [here](https://dymoy.netlify.app/) or at the following link: https://dymoy.netlify.app/
 
-If you are interested in running the application locally, please use the following steps:
-1. Clone this repository to your local machine. (For reference, visit the [Cloning a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) GitHub Docs article.)
-2. Run `npm install` in your CLI to download the npm package dependencies.
+This React application was creating using the following commands:
+1. Run `npx create-react-app react-portfolio` and `npm create vite@latest`
+2. Run `npm install` to download the npm package dependencies.
 3. Run `npm run dev` to start up the backend and serve the client.
-4. Navigate to `http://localhost:3000` on your local web browser to use the application. 
+4. Navigate to `http://localhost:3000` on a local web browser to use the application. 
   
 ## Dependencies
 This project requires the following npm package dependencies, which are included in `package.json`:  
