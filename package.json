@@ -1,14 +1,14 @@
 {
   "name": "react-portfolio",
   "version": "1.0.0",
-  "description": "Derek's online portfolio, built with React.",
+  "description": "Derek's online portfolio, built with React and Vite.",
   "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dymoy/react-portfolio.git"
   },
   "author": "Derek Moy <derekymoy@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dymoy/react-portfolio/issues"
   },
