@@ -12,22 +12,24 @@ export default function Navigation() {
     const creamHex = "#F0E7D8";
 
     return (
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand">
             <div className="container-fluid">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul className="navbar-nav me-auto">
                     {navbar.map((item) => (
-                        <NavLink
-                            key={item.name}
-                            to={item.href}
-                            style={({isActive}) => {
-                                return {
-                                    color: isActive ? creamHex : greenHex,
-                                    backgroundColor: isActive ? greenHex : creamHex
-                                }
-                            }}
-                            className='nav-link mx-1 my-1 p-2 text-center rounded'>
-                            {item.name}
-                        </NavLink>
+                        <li className='nav-item' key={item.name}>
+                            <NavLink
+                                key={item.name}
+                                to={item.href}
+                                style={({isActive}) => {
+                                    return {
+                                        color: isActive ? creamHex : greenHex,
+                                        backgroundColor: isActive ? greenHex : creamHex
+                                    }
+                                }}
+                                className='nav-link mx-1 my-1 p-2 text-center rounded'>
+                                {item.name}
+                            </NavLink>
+                        </li>
                     ))}
                 </ul>
             </div>

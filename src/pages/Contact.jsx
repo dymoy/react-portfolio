@@ -32,7 +32,6 @@ export default function Contact() {
             // Update the state of message 
             setMessage(inputValue);
         }
-    
     }
 
     const validateFilled = (e) => {
@@ -73,31 +72,28 @@ export default function Contact() {
     }
 
     return (
-        <section id="contact" className='section d-flex flex-column justify-content-center align-items-start'>
+        <section id="contact" className='section d-flex flex-column justify-content-center align-items-start mb-5'>
             <div>
                 <h2 className='section-title type-animate'>Want to send me a message?</h2>
                 <p>Fill out the fields below and submit the form to get in contact with me! </p>
             </div>
             <form className='form' onSubmit={handleFormSubmit}>
                 <div className='form-field my-2'>
-                    <input required value={name} name="name" onChange={handleInputChange} onBlur={validateFilled} type="text" size="75" placeholder="What's your name?"/>
+                    <input required value={name} name="name" onChange={handleInputChange} onBlur={validateFilled} type="text" size="75" placeholder="What's your name?" className='form-control'/>
                 </div>
                 <div className='form-field my-2'>
-                    <input required value={email} name="email" onChange={handleInputChange} onBlur={validateFilled} type="email" size="75" placeholder="What email address can I reach you at?" />
+                    <input required value={email} name="email" onChange={handleInputChange} onBlur={validateFilled} type="email" size="75" placeholder="What email address can I reach you at?" className='form-control' />
                 </div>
                 <div className='form-field my-2'>
-                    <textarea required value={message} name="message" onChange={handleInputChange} onBlur={validateFilled} cols="74" rows="10" placeholder='Write your message here!'></textarea>
+                    <textarea required value={message} name="message" onChange={handleInputChange} onBlur={validateFilled} cols="74" rows="10" placeholder='Write your message here!' className='form-control'></textarea>
                 </div>
                 {error && (
                     <div>
                         <p className="error-text">* {error} *</p>
                     </div>
                  )}
-                <div className='my-2'>
-                    <button className='form-submit-btn' type='submit'>Send!</button>
-                </div>
+                <button className='form-submit-btn mb-5' type='submit'>Send!</button>
             </form>
-            
         </section>
     );
 }

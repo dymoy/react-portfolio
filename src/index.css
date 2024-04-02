@@ -19,9 +19,6 @@ body {
 
 /* HEADER */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: sticky;
     width: 100%;
     margin: 0 auto;
@@ -32,18 +29,12 @@ header {
     background-image: linear-gradient(to right, var(--cream), var(--cream) 55%, var(--green) 100%, var(--green));
 }
 
-.is-home {
-    visibility: hidden;
-}
-
-#header-name {
-    font-family: "Work Sans", serif;
-    font-weight: 700;
-    color: var(--lilac);
-}
-
 .logo {
     height: 81px;
+}
+
+.nav-item a {
+    border: 1px solid var(--green)
 }
 
 /* FOOTER */
@@ -53,10 +44,10 @@ footer {
     align-items: center;
     position: fixed;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 0;
     bottom: 0;
     left: 0;
-    padding: 0px;
+    padding: 0 10px 10px 0;
     height: auto;
     z-index: 99;
     background-image: linear-gradient(to right, var(--cream), var(--cream) 55%, var(--green) 100%, var(--green));
@@ -145,7 +136,6 @@ footer svg {
 }
 
 /* PORTFOLIO */
-/* .projects, */
 .skills-div { 
     margin-bottom: 50px;
 }
@@ -226,4 +216,49 @@ footer svg {
 
 .form-submit-btn:hover {
     background: var(--green);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 850px) {
+    * {
+        font-size: .96em;
+    }
+
+    .header-div {
+        margin: 0px auto;
+    }
+
+    .navigation {
+        margin: 0px auto;
+    }
+
+    #pic {
+        width: 180px;
+        height: 180px;
+        border: 2px solid var(--cream);
+        margin: 0px 0px 30px
+    }
+
+    #contact {
+        margin-bottom: 80px;
+    }
+
+    footer {
+        justify-content: center;
+        padding: 7px;
+    }
+
+    footer svg {
+        height: 30px;
+        margin: 3px 10px;
+        fill: var(--cool-gray);
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    * {
+        font-size: .98em;
+    }
 }

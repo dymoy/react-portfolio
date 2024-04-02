@@ -10,17 +10,15 @@ const isHome = () => {
 
 export default function Header() {
     return (
-        <header> 
+        <header className='d-flex flex-wrap justify-content-between'> 
             {/* Present name */}
-            <div className='d-flex justify-content-center align-items-center'>
+            <div className='header-div'>
                 <img src={Logo} alt="logo" className='logo'/>
-                <h1 id="header-name" className={ 
-                    'm-0' + 
-                    (isHome() ? ' is-home' : '')
-                }>Derek Moy</h1>
             </div>
             {/* Present navbar with titles corresponding to different sections of the portfolio */}
-            <Navigation />
+            <div className='navigation my-auto'>
+                <Navigation />
+            </div>
         </header>
     );
 }

@@ -9,7 +9,7 @@ export default function Resume() {
             <div className="skills-div col-md-8 my-5">
                 <h2 className='section-title type-animate'>Level up! New skill acquired!</h2>
                 <p>Here is a list of technologies that I have worked with so far.</p>
-                <div id="badge-container">
+                <div id="badge-container mb-5">
                     <p><u>Languages</u></p>
                     <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Badge" className="badge-img"/>
                     <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge" className="badge-img" />
